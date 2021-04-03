@@ -1,0 +1,20 @@
+$(document).ready(function() {
+    // mobile mode: when hamburger clicked, turn to 'X'
+    $('.fa-bars').click(function() {
+        $(this).toggleClass('fa-times');
+        $('.nav').toggleClass('nav-toggle');
+    });
+
+
+    $(window).on('load scroll', function() {
+        $('.fa-bars').removeClass('fa-times');
+        $('.nav').removeClass('nav-toggle');
+
+        if($(window).scrollTop() > 10) {
+            $('header').addClass('header-active');
+        } else {
+            $('header').removeClass('header-active');
+        }
+        
+    });
+});
