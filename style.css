@@ -204,6 +204,9 @@ header .fa-bars {
 .facility .box-container .box:hover img {
   transform: scale(1.3);
 }
+.review {
+  display: none;
+}
 
 /* for jquery */
 header .fa-times {
